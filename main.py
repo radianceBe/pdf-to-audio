@@ -54,6 +54,7 @@ def say(text: str, rate: int = 125, volume: float = 1.0, voice: int = 0, saveAud
 
     if saveAudio:
         engine.save_to_file(text, filename)
+        engine.runAndWait()
 
 
 # <Saving Audio as MP3>
